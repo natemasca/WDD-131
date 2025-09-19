@@ -2,6 +2,17 @@ const themeSelector = document.querySelector("select") // replace with code to s
 function changeTheme() {
 // check to see what the current value of our select is.
 // The current value is conveniently found in themeSelector.value!
+    const darkmode = document.querySelector("body");
+    const img = document.querySelector(".logo");
+
+    if  (themeSelector.value === "dark") {
+        darkmode.classList.add("dark");
+        img.src="byui-logo_white.png";
+        
+    } else if (themeSelector.value !== "dark") {
+        darkmode.classList.remove("dark");
+        img.src="byui-logo_blue.webp";     
+    }
 
 // if the value is dark then:
 // add the dark class to the body
