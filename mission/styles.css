@@ -7,12 +7,16 @@
 
 }
 
+header {
+    border-bottom: 1px solid #ddd;
+}
 .title {
     text-align: center;
     
     letter-spacing: 4px;
     text-transform: uppercase;
 }
+
 
 p {
     text-align: left;
@@ -33,9 +37,7 @@ p {
 }
 
 body {
-    display: flex;
     justify-content: center;
-   
     align-items: center;
 }
 
