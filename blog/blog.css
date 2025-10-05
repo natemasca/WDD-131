@@ -1,0 +1,135 @@
+/* Gold color: #EFC69B
+Red color: #AF1B3F
+Dark color: #473144
+Body font: Helvetica, Arial, sans-serif
+Headline font: Lora, Impact, serif (Lora can be found on Google Fonts.) */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.main-nav {
+    display: grid;
+    width: 100%;
+    grid-auto-flow: column;     
+    grid-auto-columns: auto;
+    justify-content: end;
+    justify-items: end;
+    gap: 30px;
+    max-width: 100%;
+    list-style: none;
+    max-width: 1400px;      
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+ 
+}
+
+.navbar {
+    border-top: 1px solid #AF1B3F;
+    border-bottom: 1px solid #AF1B3F;
+    width: 100%; 
+    margin-bottom: 15px;    
+}
+
+
+.main-nav li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+   
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #AF1B3F;
+    
+   
+}
+
+h2 {
+    color: #AF1B3F;
+    text-align: left;
+    font-family: Lora;
+
+}
+
+h1 {
+    font-family: Lora;
+    text-align: center;
+    font-size: 45px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+   
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form {
+    grid-column: 2;
+    margin: 0 auto;
+    border: 3px solid #473144;
+    padding: 20px;
+}
+
+.otherInfo {
+    grid-column: 1;
+    text-align: right;
+    padding: 10px;
+    border-right: 1px solid #473144;
+    line-height: 0.8;
+    
+}
+
+.article {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 40px;
+    
+}
+
+.bookinfo {
+    grid-column: 2;
+    padding-left: 50px;
+    text-align: center;
+    
+}
+
+.bookinfo > p {
+    text-align: left;
+}
+
+
+.date {
+    font-size: 20px;
+}
+
+.skiptocontent a {
+	/* set the element to absolute positioning */
+    position: absolute;
+	/* move it off screen */
+    top: -40px;
+	/* Make sure it will be on the left edge of the screen */
+    text-align: left;
+	/* Change the background and color to something that stands out */
+    background-color: chocolate;    
+}
+.skiptocontent a:focus {
+	/* Move it back on when focused */
+    top: 0;
+}
+
+img {
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+
