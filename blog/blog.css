@@ -113,17 +113,13 @@ main {
 }
 
 .skiptocontent a {
-	/* set the element to absolute positioning */
     position: absolute;
-	/* move it off screen */
     top: -40px;
-	/* Make sure it will be on the left edge of the screen */
     text-align: left;
-	/* Change the background and color to something that stands out */
     background-color: chocolate;    
 }
 .skiptocontent a:focus {
-	/* Move it back on when focused */
+	
     top: 0;
 }
 
