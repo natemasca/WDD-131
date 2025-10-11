@@ -13,6 +13,7 @@ function handleResize () {
     }
 }
 
+
 handleResize();
 window.addEventListener("resize", handleResize);
 menuButton.addEventListener("click", toggleMenu);

@@ -80,7 +80,7 @@ header {
     outline: none;      
     box-shadow: none; 
     border: none;
-    padding: none;
+    padding: 0;
     font-size: 30px;
     
 }
@@ -128,37 +128,55 @@ img {
     object-fit: cover;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 700px) and (max-width: 999px) {
     .gallery { 
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        row-gap: 50px;
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+  }
 
-    figure {
-        margin-left: 190px;
-        max-width: 100%;
-        margin: auto;
-        padding: auto;
-    }
+  figure {
+    margin-left: 190px;
+    max-width: 100%;
+    margin: auto;
+    padding: auto;
+  }
 
-    header {
-        max-width: 100%;
-        background-color: blueviolet;
-        padding: 10px;
-        color: white;
-        font-family: Mooli;
-    }
+  header {
+    max-width: 100%;
+    background-color: blueviolet;
+    padding: 10px;
+    color: white;
+    font-family: Mooli;
+  }
 
-    nav {
-        display: flex;
-    }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    nav a {
-        display: none;
-    }
+  .menu {
+    display: grid;
+    gap: 10px;
+    background-color: blueviolet;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
 
+  
+  .menu.hide {
+    display: none;
+  }
+
+  .button {
+    display: block;
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    color: white;
+  }
 
 }
 
