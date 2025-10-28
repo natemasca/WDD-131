@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1, h2 {
+    font-family: "Roboto";
+    text-align: center;
+    
+}
+
+h1 {
+    padding-right: 40px;
+}
+
+#gif {
+    width: 50px
+}
+
+.aboutme {
+    text-align: justify;
+    padding: 10px;
+    grid-column: 2;
+}
+
+.navigation {
+    place-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    background-color: #E0D8DE;
+}
+
+.navigation a{
+    font-family: "Courier Prime";
+    place-self: center;
+    text-decoration: none;
+    padding: 15px;
+    color: #4B3B47;
+}
+
+body{
+    padding: 10px;
+}
+
+.navigation a:hover {
+    color: #E0D8DE;
+    background-color: #9C9990;
+}
+
+footer {
+    font-family: "Courier Prime";
+    text-align: center;
+    margin-top: 40px;
+    font-size: 10px;
+}
+
+p {
+    font-family: "Courier";
+    text-align: justify;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    
+}
+
+
+main > img {
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    height: fit-content;
+}
+
+.logo-box {
+    width: 150px;
+    grid-row: 1;
+    place-self: center;
+}
+
+@media (min-width: 600px) {
+    footer {
+        text-align: left;
+    }
+}
+
+@media (min-width: 960px) {
+  body {
+    max-width: 1300px;
+    margin: 0 auto; 
+  }
+}

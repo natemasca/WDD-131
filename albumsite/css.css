@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.album-info img{
+  width: 200px;
+}
+
+.drop-btn {
+  padding: 6px 10px;
+  text-align: left;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #997a45;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.drop-content {
+  display: none;
+  margin-top: 20px;
+  max-width: 400px;
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.drop-content.show {
+  display: block;
+}
+
+.suggestion-box {
+  text-align: center;
+}
+
+#suggest-btn {
+  padding: 12px 24px;
+  background-color: #997a45;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+  margin-top: 15px;
+}
+
+.album-display {
+  margin-top: 25px;
+  padding: 20px;
+}
+
+.album-display img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.album-display h3 {
+  margin: 10px 0 5px;
+  font-family: "Courier Prime";
+}
+
+.album-display p {
+  color: #333;
+  font-family: "Courier";
+  text-align: center;
+}
+
+body {
+  color: #222;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1, h2 {
+    font-family: "Roboto";
+    text-align: center;
+}
+
+p {
+    font-family: "Courier";
+    text-align: justify;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #997a45 ;
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+}
+
+.navigation a {
+  color: #151415;
+  font-family: "Courier Prime";
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+  color: #E0D8DE;
+}
+
+
+main {
+  flex: 1;
+  text-align: center;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-right: 30px;
+}
+
+#gif {
+  width: 50px;
+  height: auto;
+  box-shadow: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  margin: 1rem 0;
+}
+
+.line {
+  height: 2px;
+  background: #4B3B47;
+  margin: 2rem auto;
+  width: 60%;
+  border-radius: 2px;
+}
+
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.aboutme {
+  text-align: justify;
+  padding: 1rem;
+  background: white;
+}
+
+
+footer {
+  font-family: "Courier Prime";
+  text-align: center;
+  background: #997a45;
+  color: #151415;
+  padding: 1rem;
+  font-size: 0.9rem;
+  
+}
+
+@media (min-width: 600px) {
+  .homepage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 20px;
+    max-width: 1200px;
+  }
+
+  .homepage > h2, p {
+    grid-column: 2;
+  }
+
+  h1 {
+    place-self: center;
+    grid-column: 1 / -1;
+  }
+
+  #welcome {
+    place-self: center;
+  }
+
+  footer {
+    text-align: left;
+  }
+
+  h2 {
+    grid-column: 1;
+  }
+
+  .line {
+    display: none;
+  }
+
+  img {
+    grid-column: 1;
+  }
+
+  .drop-btn {
+    display: none;
+  }
+
+  .drop-content {
+    display: block;
+  }
+
+  .suggestion-box {
+    grid-column: 1;
+  }
+ 
+  .album-info > p {
+    grid-column: 2;
+  }
+
+  .albumpage {
+    max-width: 1300px;
+  }
+
+  .album {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .album > h2 {
+    font-family: "Courier Prime";
+  }
+
+  .album > img {
+   width: 400px;
+  }
+
+  .album > p {
+    text-align: left;
+    width: 1100px;
+  }
+
+  .album > h2 {
+    place-self: center;
+    grid-column: 1 / -1;
+  }
+
+  .drop-content {
+    max-width: 1100px;
+    margin-left: 10px;
+  }
+  
+ 
+.album-card {
+  position: relative;
+  perspective: 1000px; 
+  display: inline-block;
+  width: 100%;
+  max-width: 400px; 
+  margin: 1rem 0;
+}
+
+
+.album-card::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%; 
+}
+
+.album-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.album-card:hover .album-inner {
+  transform: rotateY(180deg);
+}
+
+.album-front,
+.album-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.hide {
+  display: inline;
+}
+
+.album-front img,
+.album-back img {
+  width: 400px;
+  object-fit: contain; 
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+
+.album-back {
+  transform: rotateY(180deg);
+}
+
+}
+
+

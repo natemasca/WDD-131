@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nathan Mascarenhas">
+    <meta name="description" content="This is a website where I display my favorite music albums.">
+    <link rel="stylesheet" href="css.css">
+    <script src="albums.js" defer></script>
+    <title>Albums I Love</title>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <img class="logo" src="./site-logo.png" alt="Site Logo">
+        </div>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="#">Albums</a>
+        </div>
+    </header>
+    <main class="albumpage">
+        <h1><img id="gif" src="./cd-gif.gif" alt="CD Gif">Albums</h1>
+            <div class="album">
+                <h2>To Pimp A Butterfly – Kendrick Lamar (2015)</h2>
+                <div class="album-card">
+                    <div class="album-inner">
+                        <div class="album-front">
+                            <img src="./tpab.png" alt="TPAB Front Cover">
+                        </div>
+                        <div class="album-back">
+                            <img class="hide" src="./tpab_back.jpg" alt="TPAB Back Cover"> 
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="drop-btn">→ Read</button>
+                    <div class="drop-content">
+                        <p>This was the first story telling Hip Hop album I’ve ever listened to. This critically acclaimed album’s themes vary from racism, addiction, self-esteem, and being focused on your goals. My memory with listening to it for the first time was just being mind blown. The intricate lyrics, jazz instrumentals, and spoken word sections made me really appreciate how deep music can be. The best written album of all time in my opinion. Kendrick made a statement with 
+                                        this body of work and I think everyone should check it out. Really good stuff.</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="album">
+                <h2>ASTROWORLD – Travis Scott (2018)</h2>
+                <div class="album-card">
+                    <div class="album-inner">
+                        <div class="album-front">
+                            <img src="./astrohd.jpg" alt="Astroworld Front Cover">
+                        </div>
+                        <div class="album-back">
+                            <img class="hide" src="./astro_back.jpg" alt="Astroworld Back Cover">
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                        <button class="drop-btn">→ Read</button>
+                        <div class="drop-content">
+                            <p>ASTROWORLD was one of the albums that shaped my taste in music. I still remember being back in school for 10th grade in summer 2018 when this came out. The album is named after the old Houston theme park, and it sounds exactly like one. Many twists and turns, high and low moments, and a very colorful impact. It’s a big part of the reason Travis Scott is now my favorite artist. It’s a Hip Hop album, but also has elements of Pop, Soul, and R&B.</p>
+                        </div>
+                </div>
+            </div>
+            <div class="album">
+                <h2>Blonde – Frank Ocean (2016)</h2>
+                <div class="album-card">
+                    <div class="album-inner">
+                        <div class="album-front">
+                            <img src="./blondehd.jpeg" alt="Blonde Front Cover">
+                        </div>
+                        <div class="album-back">
+                            <img class="hide" src="./blonde_back.jpg" alt="Blonde Back Cover">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dropdown">
+                        <button class="drop-btn">→ Read</button>
+                        <div class="drop-content">
+                            <p>Blonde was also one of the best first listens I’ve ever had. It’s a very soulful R&B album that is just pure feeling. Amazing singing performances that made me like non-hip hop songs even more. I first listened to it on a Wednesday morning in my room in 2018, I was just amazed at everything. It’s also my favorite album to listen during road trips, or any trip. It has an amazing atmosphere and can get you in touch with your feelings as a bonus (you might look like the album cover).</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="album">
+                <h2>IGOR (eee-gore) – Tyler, The Creator (2019)</h2>
+                <div class="album-card">
+                    <div class="album-inner">
+                        <div class="album-front">
+                            <img src="./igorhd.png" alt="IGOR Front Cover">
+                        </div>
+                        <div class="album-back">
+                            <img class="hide" src="./igor_back.webp" alt="IGOR Back Cover">
+                        </div>
+                    </div>
+                </div>    
+                
+                <div class="dropdown">
+                        <button class="drop-btn">→ Read</button>
+                        <div class="drop-content">
+                            <p>IGOR was not my favorite when I first listened to it. I was excited for it since it was my first Tyler album rollout ever, after I became a fan at the end of 2018. I only waited about 6 months for it, and the teasers got me excited. The night before it released, Tyler released a note telling us to listen without any expectations, this was going to be different from all of his other 5 albums at the time. I understood what he was talking about right after I listened to the album for the first time. This was not a rap album. It was soulful, pop, R&B. Raw feeling and melodies. It had some rapping here and there, but those were the big exceptions. At only 40 minutes of runtime, IGOR tells a love (or heartbreak, depending on how you look at it) story. I have to admit that the reason why it’s my favorite Tyler album so far is that it became too relatable. It’s also one of the albums that made me appreciate elements in music I never paid close attention to, like chords, bridges, and background vocals. Amazing body of work.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="suggestion-box">
+            <button id="suggest-btn">Suggestion of the day</button>
+            <div id="album-display" class="album-display">
+            </div>
+        </div>
+    </main>
+    <footer>©2025 Nathan Mascarenhas</footer>
+</body>
+</html>
